@@ -2,8 +2,11 @@
 # Chakra UI React Any Carousel
 
 <a alt="ChakraUI logo" href="https://github.com/chakra-ui/chakra-ui"  target="_blank" rel="noreferrer"><img  src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true"  width="200"></a>
+
 Carousel animation for any provided React component
+
 ![chakra-any-carousel](https://i.ibb.co/CtHvPdZ/chakra-any-carousel.png)
+
 
 ## Usage
 
