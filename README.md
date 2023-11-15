@@ -44,10 +44,10 @@ The `children` component must implement the following:
 
     <Carousel
 	    id="homeCarousel-1"
-		direction="right"
-		interval={2000}
-		repetitions={1}
-		items={getCarouselItems()}
+	    direction="right"
+            interval={2000}
+	    repetitions={1}
+	    items={getCarouselItems()}
 	>
 		<CarouselCard  />
 	</Carousel>
