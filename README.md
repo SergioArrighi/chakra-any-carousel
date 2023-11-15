@@ -38,6 +38,21 @@ The `children` component must implement the following:
 
 ### Example
 
+    const  CarouselCard  =  ({ image }:  Partial<CarouselItem>)  =>  (
+		<Image  src={image?.imageUrl} />
+	);
+
+    <Carousel
+	    id="homeCarousel-1"
+		direction="right"
+		interval={2000}
+		repetitions={1}
+		items={getCarouselItems()}
+	>
+		<CarouselCard  />
+	</Carousel>
+
+
 ## Styling
 The only elements that at the moment can be styled are the arrows.
 The style can be modified by implementing a ChakraUI theme component as follows:
