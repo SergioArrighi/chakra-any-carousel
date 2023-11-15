@@ -5,9 +5,6 @@
 
 Carousel animation for any provided React component
 
-![chakra-any-carousel](https://i.ibb.co/CtHvPdZ/chakra-any-carousel.png)
-
-
 ## Usage
 
 ### Interfaces
