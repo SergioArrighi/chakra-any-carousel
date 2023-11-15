@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react';
 import React, { useCallback, useEffect, useState } from 'react';
 
-enum Direction {
+export enum Direction {
   LEFT,
   RIGHT,
 }
@@ -58,7 +58,7 @@ export interface CarouselItemProps extends Partial<CarouselItem> {
   slides: number;
 }
 
-const Carousel = ({
+export const Carousel = ({
   id,
   interval,
   direction,
@@ -162,5 +162,3 @@ const Carousel = ({
     </Flex>
   );
 };
-
-export default Carousel;

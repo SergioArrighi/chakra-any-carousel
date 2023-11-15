@@ -1,5 +1,6 @@
+import React, { ReactNode } from 'react';
+
 declare module 'chakra-any-carousel' {
-  import { ReactNode } from 'react';
 
   export enum Direction {
     LEFT,
