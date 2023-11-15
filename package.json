@@ -1,0 +1,47 @@
+{
+  "name": "chakra-any-carousel",
+  "version": "1.0.0",
+  "description": "A carousel animating any element",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "type": "module",
+  "types": "types/carousel.d.ts",
+  "scripts": {
+    "build": "npx rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioArrighi/chakra-any-carousel.git"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "chakra",
+    "carousel"
+  ],
+  "author": "Sergio Arrighi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SergioArrighi/chakra-any-carousel/issues"
+  },
+  "homepage": "https://github.com/SergioArrighi/chakra-any-carousel#readme",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/react": "^18.2.37",
+    "@types/rollup-plugin-peer-deps-external": "^2.2.4",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "react": "^18.2.0",
+    "rollup": "^4.4.1"
+  }
+}
