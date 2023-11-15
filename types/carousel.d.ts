@@ -1,6 +1,11 @@
 declare module 'chakra-any-carousel' {
   import { ReactNode } from 'react';
 
+  export enum Direction {
+    LEFT,
+    RIGHT,
+  }
+
   export interface CarouselImage {
     imageUrl: string;
   }
@@ -21,7 +26,7 @@ declare module 'chakra-any-carousel' {
   export interface CarouselProps {
     id: string;
     interval: number;
-    direction: 'right' | 'left';
+    direction: Direction;
     repetitions: number;
     items?: CarouselItem[];
     children: ReactNode;
