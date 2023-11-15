@@ -128,7 +128,7 @@ export const Carousel = ({
         sx={getArrowStyles(Direction.LEFT)}
         color={arrowColor}
         left="0"
-        onMouseDown={nextSlide}
+        onMouseDown={prevSlide}
       >
         &#10094;
       </Text>
