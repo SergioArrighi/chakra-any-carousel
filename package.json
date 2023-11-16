@@ -1,6 +1,6 @@
 {
   "name": "chakra-any-carousel",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A carousel animating any element",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

@@ -22,6 +22,7 @@ declare module 'chakra-any-carousel' {
     description: string;
     image: CarouselImage;
     link?: CarouselLink;
+    onClick: () => void;
   }
 
   export interface CarouselProps {

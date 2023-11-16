@@ -17,6 +17,7 @@ Carousel animation for any provided React component
 		description:  string;
 		image:  CarouselImage;
 		link:  CarouselLink;
+		onClick:  ()  =>  void; // A function associated to the onClick event of the carousel component
 	}
 Represent the data accessible inside the single carousel item which will be provided by the user.
 

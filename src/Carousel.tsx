@@ -41,6 +41,7 @@ export interface CarouselItem {
   description: string;
   image: CarouselImage;
   link: CarouselLink;
+  onClick: () => void;
 }
 
 export interface CarouselProps {
@@ -80,7 +81,7 @@ export const Carousel = ({
 
   const prevSlide = useCallback(() => {
     const slides: number[] = currentSlides.map((value) => {
-      return value === 0 ? items.length - 1 : value;
+      return value === 0 ? items.length - 1 : value - 1;
     });
     setCurrentSlides(slides);
   }, [currentSlides, items.length]);
@@ -132,8 +133,8 @@ export const Carousel = ({
       >
         &#10094;
       </Text>
-      {[...Array(repetitions)].map((_repetition, index) => (
-        <Flex key={`${id}-repetition-1`} overflow="hidden">
+      {[...Array(repetitions)].map((repetition, index) => (
+        <Flex key={`${id}-${repetition}`} overflow="hidden">
           <Flex pos="relative" w="full" {...carouselStyle(index)}>
             {items.map((item, innerIndex) => {
               const req: CarouselItemProps = {
@@ -143,7 +144,8 @@ export const Carousel = ({
                 ...item,
               };
               return React.cloneElement(children, {
-                key: `${id}-repetition-2`,
+                key: `${id}-${repetition}-${item.title}`,
+
                 ...req,
               });
             })}
