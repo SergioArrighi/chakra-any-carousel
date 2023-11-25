@@ -1,6 +1,6 @@
 {
   "name": "chakra-any-carousel",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "A carousel animating any element",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -42,6 +42,7 @@
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
     "react": "^18.2.0",
+    "react-swipeable": "^7.0.1",
     "rollup": "^4.4.1"
   }
 }

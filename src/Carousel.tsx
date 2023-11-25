@@ -6,6 +6,7 @@ import {
   useMultiStyleConfig,
 } from '@chakra-ui/react';
 import React, { useCallback, useEffect, useState } from 'react';
+import { SwipeEventData, useSwipeable } from 'react-swipeable';
 
 export enum Direction {
   LEFT,
@@ -93,6 +94,11 @@ export const Carousel = ({
     setCurrentSlides(slides);
   }, [currentSlides, items.length]);
 
+  const handlers = useSwipeable({
+    onSwipedLeft: (eventData: SwipeEventData) => nextSlide(),
+    onSwipedRight: (eventData: SwipeEventData) => prevSlide(),
+  });
+
   useEffect(() => {
     const automatedSlide = setInterval(() => {
       if (direction === Direction.LEFT) {
@@ -122,7 +128,7 @@ export const Carousel = ({
   };
 
   return (
-    <Flex w="full" p={4} alignItems="center" justifyContent="center">
+    <Flex w="full" p={4} alignItems="center" justifyContent="center" { ...handlers }>
       <Text
         pos="relative"
         userSelect="none"

@@ -3,7 +3,7 @@
 
 <a alt="ChakraUI logo" href="https://github.com/chakra-ui/chakra-ui"  target="_blank" rel="noreferrer"><img  src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true"  width="200"></a>
 
-Carousel animation for any provided React component
+Swipable carousel animation for any provided React component
 ![chakra-any-carousel](https://github.com/SergioArrighi/chakra-any-carousel/assets/10941512/289d7255-bd7f-4e33-8f10-cc11db2101e5)
 
 ## Usage
